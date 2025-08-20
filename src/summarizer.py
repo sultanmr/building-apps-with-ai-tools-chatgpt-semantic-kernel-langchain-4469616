@@ -39,7 +39,7 @@ Output:
 
 List: """
 prompt = f"{prompt_prefix}{prompt_examples}" + "{{$input}}" + "Output:\n"
-print (prompt)
+
 summarize = kernel.create_semantic_function(prompt)
 
 # Summarize the list
